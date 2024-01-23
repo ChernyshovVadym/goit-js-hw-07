@@ -25,7 +25,7 @@ const destroyBoxes = () => {
 };
 dataCreate.addEventListener('click', () => {
   const input = controls.querySelector('input');
-  const amount = Number(input.value);
+  const inputValue = Number(input.value);
   if (inputValue >= 1 && inputValue <= 100) {
     createBoxes(inputValue);
   }
